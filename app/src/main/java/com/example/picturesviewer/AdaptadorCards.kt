@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.picturesviewer.R
 
 class AdaptadorCards(var items: ArrayList<Card>) : RecyclerView.Adapter<AdaptadorCards.TarjViewHolder>() {
-    private lateinit var onClick: (View) -> Unit
+    lateinit var onClick: (View) -> Unit
 
     init {
         this.items = items

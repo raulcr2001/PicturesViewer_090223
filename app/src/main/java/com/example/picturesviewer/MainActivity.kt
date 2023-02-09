@@ -34,6 +34,10 @@ class MainActivity : AppCompatActivity() {
         val adaptador = AdaptadorCards(cards)
         recView.adapter = adaptador
         recView.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
+
+        adaptador.onClick = {
+
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
