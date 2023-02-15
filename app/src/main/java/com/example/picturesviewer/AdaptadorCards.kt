@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.picturesviewer.R
 
 class AdaptadorCards(var items: ArrayList<Card>) : RecyclerView.Adapter<AdaptadorCards.TarjViewHolder>() {
-    lateinit var onClick: (View) -> Unit
+    lateinit var onLongClick: (View) -> Unit
 
     init {
         this.items = items
@@ -33,7 +33,7 @@ class AdaptadorCards(var items: ArrayList<Card>) : RecyclerView.Adapter<Adaptado
 
     override fun onBindViewHolder(viewHolder: TarjViewHolder, pos: Int) {
         var itemCard = items[pos]
-        viewHolder.bindTarjeta(itemCard,onClick)
+        viewHolder.bindTarjeta(itemCard,onLongClick)
     }
 
     override fun getItemCount(): Int {

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_imagen_motionlayout_scene"
+    tools:context=".Imagen">
+
+    <ImageView
+        android:id="@+id/imagenAnim"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/image1"
+        tools:layout_editor_absoluteY="238dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:src="@drawable/ic_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="263dp"
+        tools:layout_editor_absoluteY="612dp" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
